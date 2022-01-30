@@ -32,8 +32,14 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/view_post','Post::viewPost');
 
+$routes->get('/api/posts','Post::viewPost');                            //Get All Post
+$routes->get('/api/posts/(:num)','Post::getPostById/$1');               //Get Post by Id
+
+$routes->get('/api/officer','Officer::viewOfficer');                    //Get All Officer
+$routes->get('/api/officer/(:num)','Officer::getOfficerById/$1');       //Get Officer by Id
+$routes->post('/api/officer','Officer::addOfficer');                    //Add New Officer
+$routes->delete('/api/officer/(:num)','Officer::deleteOfficer/$1');     //Delete Officer
 /*
  * --------------------------------------------------------------------
  * Additional Routing

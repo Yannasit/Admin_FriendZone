@@ -19,4 +19,17 @@ class Post extends ResourceController // เปลี่ยนจาก Controll
         //return view('view_post', $data);
         return $this->respond($data['post']);
     }
+
+    //Get Post ById
+    public function getPostById($id = null)
+    {
+        $model = new PostModel();
+        $data = $model->where('postId', $id)->first();
+        if ($data) {
+            return $this->respond($data);
+        } else {
+            return $this->failNotFound('No Post found');
+        }
+    }
+
 }
