@@ -15,20 +15,24 @@ class Post extends ResourceController // เปลี่ยนจาก Controll
     public function viewPost()
     {
         $model = new PostModel();
-        $data['post'] = $model->orderBy('postId', "DESC")->findAll();
+        $data = $model -> viewPost();
         //return view('view_post', $data);
-        return $this->respond($data['post']);
+        if ($data) {
+          return $this->respond($data);  
+        }
+        
     }
 
     //Get Post ById
     public function getPostById($id = null)
     {
         $model = new PostModel();
-        $data = $model->where('postId', $id)->first();
+        $id = 2 ;
+        $data = $model-> getPostById($id);
         if ($data) {
             return $this->respond($data);
         } else {
-            return $this->failNotFound('No Post found');
+            return $this->failNotFound('ไม่มีโพสต์ประกาศกิจกรรมอยู่ในฐานข้อมูล');
         }
     }
 
