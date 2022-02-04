@@ -11,6 +11,7 @@ use CodeIgniter\API\ResponseTrait; // เรียกใช้API
 class Post extends ResourceController // เปลี่ยนจาก Controller
 {
     use RequestTrait; // เรียกใช้
+    
     //Get all Post
     public function viewPost()
     {
