@@ -15,6 +15,9 @@ class PostModel extends Model{
         return $data;
     }
 
+
+    
+
     public function getPostById($id)
     {
         $data = $this->where('postId', $id)->first();
