@@ -1,0 +1,160 @@
+CRITICAL - 2022-02-12 01:13:52 --> Invalid file: admin/index.php
+#0 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/index.php')
+#1 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('admin/index', Array, true)
+#2 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\AdminController.php(9): view('admin/index')
+#3 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\AdminController->index()
+#4 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-12 01:15:33 --> Invalid file: admin/home.php
+#0 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/home.php')
+#1 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('admin/home', Array, true)
+#2 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\AdminController.php(9): view('admin/home')
+#3 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\AdminController->index()
+#4 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-12 01:15:33 --> Invalid file: admin/home.php
+#0 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/home.php')
+#1 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('admin/home', Array, true)
+#2 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\AdminController.php(9): view('admin/home')
+#3 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\AdminController->index()
+#4 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-12 01:15:33 --> Invalid file: admin/home.php
+#0 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/home.php')
+#1 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('admin/home', Array, true)
+#2 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\AdminController.php(9): view('admin/home')
+#3 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\AdminController->index()
+#4 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-12 01:15:34 --> Invalid file: admin/home.php
+#0 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/home.php')
+#1 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('admin/home', Array, true)
+#2 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\AdminController.php(9): view('admin/home')
+#3 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\AdminController->index()
+#4 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-12 01:15:34 --> Invalid file: admin/home.php
+#0 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/home.php')
+#1 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('admin/home', Array, true)
+#2 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\AdminController.php(9): view('admin/home')
+#3 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\AdminController->index()
+#4 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-12 01:19:40 --> Invalid file: admin/home.php
+#0 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/home.php')
+#1 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('admin/home', Array, true)
+#2 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\AdminController.php(9): view('admin/home')
+#3 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\AdminController->index()
+#4 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-12 01:19:41 --> Invalid file: admin/home.php
+#0 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/home.php')
+#1 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('admin/home', Array, true)
+#2 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\AdminController.php(9): view('admin/home')
+#3 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\AdminController->index()
+#4 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-12 01:21:00 --> Invalid file: dashboard/home.php
+#0 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/home....')
+#1 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/home', Array, true)
+#2 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\AdminController.php(9): view('dashboard/home')
+#3 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\AdminController->index()
+#4 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-12 01:21:01 --> Invalid file: dashboard/home.php
+#0 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/home....')
+#1 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/home', Array, true)
+#2 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\AdminController.php(9): view('dashboard/home')
+#3 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\AdminController->index()
+#4 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-12 01:21:01 --> Invalid file: dashboard/home.php
+#0 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/home....')
+#1 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/home', Array, true)
+#2 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\AdminController.php(9): view('dashboard/home')
+#3 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\AdminController->index()
+#4 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-12 01:21:01 --> Invalid file: dashboard/home.php
+#0 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/home....')
+#1 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/home', Array, true)
+#2 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\AdminController.php(9): view('dashboard/home')
+#3 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\AdminController->index()
+#4 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-12 01:21:01 --> Invalid file: dashboard/home.php
+#0 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/home....')
+#1 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/home', Array, true)
+#2 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\AdminController.php(9): view('dashboard/home')
+#3 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\AdminController->index()
+#4 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-12 01:21:01 --> Invalid file: dashboard/home.php
+#0 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/home....')
+#1 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/home', Array, true)
+#2 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\AdminController.php(9): view('dashboard/home')
+#3 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\AdminController->index()
+#4 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-12 01:21:01 --> Invalid file: dashboard/home.php
+#0 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/home....')
+#1 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/home', Array, true)
+#2 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\AdminController.php(9): view('dashboard/home')
+#3 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\AdminController->index()
+#4 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-12 01:21:02 --> Invalid file: dashboard/home.php
+#0 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/home....')
+#1 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/home', Array, true)
+#2 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\AdminController.php(9): view('dashboard/home')
+#3 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\AdminController->index()
+#4 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
