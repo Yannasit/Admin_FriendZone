@@ -31,11 +31,9 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
 
-$routes->group("admin",function($routes){
-    $routes->get('home','AdminController::index',['as'=>'admin.home']);
-});
+
+$routes->get('/', 'Home::index');
 
 $routes->get('/api/posts','Post::viewPost');                                //Get All Post
 $routes->get('/api/posts/(:num)','Post::getPostById/$1');                   //Get Post by Id
