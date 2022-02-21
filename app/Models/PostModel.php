@@ -15,7 +15,6 @@ class PostModel extends Model{
         return $data;
     }
 
-
     
 
     public function getPostById($id)

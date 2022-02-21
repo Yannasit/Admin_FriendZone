@@ -33,7 +33,8 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 
 
-$routes->get('/', 'Home::index');
+// $routes->get('/', 'Home::index');
+$routes->get('/', 'User::viewUser');
 
 $routes->get('/api/posts','Post::viewPost');                                //Get All Post
 $routes->get('/api/posts/(:num)','Post::getPostById/$1');                   //Get Post by Id
