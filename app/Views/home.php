@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/skin.min.css">
 </head>
 
-<body class="skin-blue">
+<body class="skin-blue" onload>
 
 
   <div class="wrapper">
@@ -261,96 +261,120 @@
               | Your Page Content Here |
               -------------------------->
         
-          <div class="col-md-3">
-            <div class="info-box">
-              <span class="info-box-icon bg-aqua"><i class="fa fa-telegram"></i></span>
-              <div class="info-box-content">
-                <span class="info-box-text">คำขอที่รออนุมัติ</span>
-                <span class="info-box-number">90</span>
-              </div><!-- /.info-box-content -->
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="info-box">
-              <span class="info-box-icon bg-green"><i class="fa fa-telegram"></i></span>
-              <div class="info-box-content">
-                <span class="info-box-text">คำขอที่อนุมัติแล้ว</span>
-                <span class="info-box-number">150</span>
-              </div><!-- /.info-box-content -->
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="info-box">
-              <span class="info-box-icon bg-yellow"><i class="fa fa-clone"></i></span>
-              <div class="info-box-content">
-                <span class="info-box-text">โพสทั้งหมด</span>
-                <span class="info-box-number">299</span>
-              </div><!-- /.info-box-content -->
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="info-box">
-              <span class="info-box-icon bg-red"><i class="fa fa-bug"></i></span>
-              <div class="info-box-content">
-                <span class="info-box-text">รายงานโพส</span>
-                <span class="info-box-number">12</span>
-              </div><!-- /.info-box-content -->
-            </div>
-          </div>
-          <!-- <div class="col-md-6">
-            <div class="info-box bg-aqua">
-              <span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
-              <div class="info-box-content">
-                <span class="info-box-text">Bookmarks</span>
-                <span class="info-box-number">41,410</span>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 70%"></div>
-                </div>
-                <span class="progress-description">
-                  70% Increase in 30 Days
-                </span>
+        <div class="row justify-content-md-center">
+          <!-- data table ใช้เเสดงข้อมูลเเละเเบ่งหน้าให้อัตโนมัติ -->
+          <div class="col-12">
+            <table class="table table-striped table-bordered table-hover table-responsive-sm" id="users-list">
+              <thead class="thead-light">
+                <tr style="text-align: center;">
+                  <th>ไอดีผู้ใช้</th>
+                  <th>ชื่อ</th>
+                  <th>นามสกุล</th>
+                  <th>รหัสบัตรประชาชน</th>
+                  <th>รูปบัตรประชาชน</th>
+                  <th>สถานะ</th>
+                  <th>เพศ</th>
+                  <th>รูปผู้ใช้</th>
+                  <th>วันเกิด</th>
+                  <th>ที่อยู่</th>
+                  <th>อีเมล</th>
+                  <th>เบอร์โทร</th>
+                  <th>จัดการ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php if ($user) : ?>
+                  <?php foreach ($user as $user) : ?>
+                    <tr style="text-align: center;">
 
-              </div><!-- /.info-box-content 
-            </div>
-          </div> -->
-          <!-- <div class="col-md-6">
-            <div class="info-box bg-green">
-              <span class="info-box-icon"><i class="fa fa-thumbs-o-up"></i></span>
-              <div class="info-box-content">
-                <span class="info-box-text">Likes</span>
-                <span class="info-box-number">41,410</span>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 70%"></div>
-                </div>
-                <span class="progress-description">
-                  70% Increase in 30 Days
-                </span>
-              </div><!-- /.info-box-content 
-            </div>
-          </div> -->
+                      <td><?php echo $user['userId']; ?></td>
+                      <td><?php echo $user['FName']; ?></td>
+                      <td><?php echo $user['LName']; ?></td>
+                      <td><?php echo $user['idCard']; ?></td>
+                      <td><img src="<?php echo $user['idCardImage']; ?>" width="100" height="100"></td>
+                      <td><?php echo $user['statusUser']; ?></td>
+                      <td><?php echo $user['gender']; ?></td>
+                      <td><img src="<?php echo $user['userImage']; ?>" width="100" height="100"></td>
+                      <td><?php echo $user['birthday']; ?></td>
+                      <td><?php echo $user['address']; ?></td>
+                      <td><?php echo $user['email']; ?></td>
+                      <td><?php echo $user['phoneNumber']; ?></td>
 
-          
-         
-                <!-- Contacts are loaded here -->
-                <div class="direct-chat-contacts">
-                  <ul class="contacts-list">
-                    <li>
-                      <a href="#">
-                        <img class="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="Contact Avatar">
-                        <div class="contacts-list-info">
-                          <span class="contacts-list-name">
-                            Count Dracula
-                            <small class="contacts-list-date pull-right">2/28/2015</small>
-                          </span>
-                          <span class="contacts-list-msg">How have you been? I was...</span>
+
+                      <td>
+                        <div class="btn-group btn-group-sm">
+                          <a class="btn btn-info" href="...<?php echo $user['userId'] ?>" data-bs-toggle="modal" data-bs-target="#userId">
+                            <i class="fa fa-eye"></i>
+                          </a>
+
                         </div>
-                        <!-- /.contacts-list-info -->
-                      </a>
-                    </li>
-                    <!-- End Contact Item -->
-                  </ul>
-                  <!-- /.contatcts-list -->
+                      </td>
+
+                    </tr>
+                  <?php endforeach; ?>
+                <?php endif; ?>
+              </tbody>
+
+
+              <div class="col-md-3">
+                <div class="info-box">
+                  <span class="info-box-icon bg-aqua"><i class="fa fa-telegram"></i></span>
+                  <div class="info-box-content">
+                    <span class="info-box-text">คำขอที่รออนุมัติ</span>
+                    <span class="info-box-number">90</span>
+                  </div><!-- /.info-box-content -->
                 </div>
+              </div>
+              <div class="col-md-3">
+                <div class="info-box">
+                  <span class="info-box-icon bg-green"><i class="fa fa-telegram"></i></span>
+                  <div class="info-box-content">
+                    <span class="info-box-text">คำขอที่อนุมัติแล้ว</span>
+                    <span class="info-box-number">150</span>
+                  </div><!-- /.info-box-content -->
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="info-box">
+                  <span class="info-box-icon bg-yellow"><i class="fa fa-clone"></i></span>
+                  <div class="info-box-content">
+                    <span class="info-box-text">โพสทั้งหมด</span>
+                    <span class="info-box-number">299</span>
+                  </div><!-- /.info-box-content -->
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="info-box">
+                  <span class="info-box-icon bg-red"><i class="fa fa-bug"></i></span>
+                  <div class="info-box-content">
+                    <span class="info-box-text">รายงานโพส</span>
+                    <span class="info-box-number">12</span>
+                  </div><!-- /.info-box-content -->
+                </div>
+              </div>
+
+
+
+              <!-- Contacts are loaded here -->
+              <div class="direct-chat-contacts">
+                <ul class="contacts-list">
+                  <li>
+                    <a href="#">
+                      <img class="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="Contact Avatar">
+                      <div class="contacts-list-info">
+                        <span class="contacts-list-name">
+                          Count Dracula
+                          <small class="contacts-list-date pull-right">2/28/2015</small>
+                        </span>
+                        <span class="contacts-list-msg">How have you been? I was...</span>
+                      </div>
+                      <!-- /.contacts-list-info -->
+                    </a>
+                  </li>
+                  <!-- End Contact Item -->
+                </ul>
+                <!-- /.contatcts-list -->
+              </div>
           </div>
         </div>
 
@@ -359,7 +383,7 @@
     </div>
     <!-- /.content-wrapper -->
 
-    
+
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
       <!-- Create the tabs -->
@@ -454,6 +478,17 @@
       removeIcon: 'fa-times'
     })
   </script>
+
+  <!-- data tabel -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#users-list').DataTable();
+    });
+  </script>
+  <script src="/main.js"></script>
 </body>
 
 </html>
