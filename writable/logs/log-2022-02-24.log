@@ -1,0 +1,48 @@
+CRITICAL - 2022-02-24 20:25:05 --> Undefined variable: session
+#0 C:\xampp\htdocs\Admin_FriendZone\app\Views\home.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 59, Array)
+#1 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('home', Array, true)
+#4 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\User.php(21): view('home', Array)
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\User->viewUser()
+#6 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-24 20:26:11 --> Undefined variable: session
+#0 C:\xampp\htdocs\Admin_FriendZone\app\Views\home.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 59, Array)
+#1 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('home', Array, true)
+#4 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\User.php(21): view('home', Array)
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\User->viewUser()
+#6 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-24 20:26:17 --> Undefined variable: session
+#0 C:\xampp\htdocs\Admin_FriendZone\app\Views\home.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 59, Array)
+#1 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('home', Array, true)
+#4 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\User.php(21): view('home', Array)
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\User->viewUser()
+#6 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-24 20:30:28 --> Undefined variable: session
+#0 C:\xampp\htdocs\Admin_FriendZone\app\Views\home.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 59, Array)
+#1 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Admin_FriendZone\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Admin_FriendZone\system\Common.php(1089): CodeIgniter\View\View->render('home', Array, true)
+#4 C:\xampp\htdocs\Admin_FriendZone\app\Controllers\User.php(21): view('home', Array)
+#5 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(825): App\Controllers\User->viewUser()
+#6 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\Admin_FriendZone\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Admin_FriendZone\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Admin_FriendZone\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

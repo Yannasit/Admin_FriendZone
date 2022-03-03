@@ -12,65 +12,63 @@ class Officer extends ResourceController // เปลี่ยนจาก Contr
 {
     use RequestTrait; // เรียกใช้
 
-    //Method Get 
-    //Get all Officer
-    public function viewOfficer()
+    public function index()
     {
-        $model = new OfficerModel();
-        $data['officer'] = $model->orderBy('offId', "DESC")->findAll();
-        return $this->respond($data['officer']);
+        helper('form');
+        echo view('login');
+    }
+    public function index2()
+    {
+        helper('form');
+        echo view('register');
     }
 
-    //Get officer ById
-    public function getOfficerById($id = null)
+    public function register()
     {
+        $rules = [
+            'userName' => 'required|min_length[6]|max_length[20]',
+            'password' => 'required|min_length[6]|max_length[20]',
+        ];
+        if($this->validate($rules)){
+            $model = new OfficerModel();
+            $data = [
+                'userName' => $this->request->getVar('userName'),
+                'password' => password_hash($this->request->getVar('password'), PASSWORD_BCRYPT),
+                'FName' => $this->request->getVar('FName'),
+                'LName' => $this->request->getVar('LName'),
+                'gender' => $this->request->getVar('gender'),
+                'phoneNumber' => $this->request->getVar('phoneNumber'),
+                'offImage' => $this->request->getVar('offImage'),
+             ];
+            if($data){
+                 $register = $model->register($data);
+                 return redirect()->to('/');
+            }
+            }else{
+                 $data['validation'] = $this->validator;
+                 echo view('register',$data);
+             }
+    }
+
+    public function login()
+    {
+        $session = session();
         $model = new OfficerModel();
-        $data = $model->where('offId', $id)->first();
+        $userName = $this->request->getVar('userName');
+        $password = $this->request->getVar('password');
+        $data = $model->login($userName, $password);
         if ($data) {
-            return $this->respond($data);
+            $session->set($data);
+            return redirect()->to('home');
         } else {
-            return $this->failNotFound('No officer found');
+            $session->setFlashdata('msg', 'ไม่สามารถเข้าสู่ระบบได้ !!!');
+            return redirect()->to('/');
         }
     }
 
-    //Method Post
-    public function addOfficer()
-    {
-        $model = new OfficerModel();
-        $data = [
-            'offId' => $this->request->getVar('offId'),
-            'FName' => $this->request->getVar('FName'),
-            'LName' => $this->request->getVar('LName'),
-            'userName' => $this->request->getVar('userName'),
-            'password' => $this->request->getVar('password'),
-            'gender' => $this->request->getVar('gender'),
-            'offImage' => $this->request->getVar('offImage'),
-            'phoneNumber' => $this->request->getVar('phoneNumber'),
-        ];
-        $model->insert($data);
-        $myRespond = [
-            "status" => 201,
-            "error" => null,
-            "message" => "Add Officer successfully"
-        ];
-        return $this->respond($myRespond);
-    }
-
-    //Method Delete
-    public function deleteOfficer($id = null)
-    {
-        $model = new OfficerModel();
-        $check = $model->where('offId', $id)->first();
-        if ($check) {
-            $model->where('offId', $id)->delete();
-            $myRespond = [
-                "status" => 201,
-                "error" => null,
-                "message" => "Delete Officer successfully"
-            ];
-            return $this->respond($myRespond);
-        } else {
-            return $this->failNotFound("No officer found");
-        }
+    public function Logout(){
+        $session = session();
+        $session->destroy();
+        return redirect()->to('/');
     }
 }

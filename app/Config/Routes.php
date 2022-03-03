@@ -34,7 +34,10 @@ $routes->setAutoRoute(true);
 
 
 // $routes->get('/', 'Home::index');
-$routes->get('/', 'User::viewUser');
+$routes->get('/home', 'User::viewUser');
+$routes->get('/', 'Officer::index');
+$routes->get('/logout', 'Officer::Logout');
+$routes->get('/register', 'Officer::index2');
 
 $routes->get('/api/posts','Post::viewPost');                                //Get All Post
 $routes->get('/api/posts/(:num)','Post::getPostById/$1');                   //Get Post by Id
