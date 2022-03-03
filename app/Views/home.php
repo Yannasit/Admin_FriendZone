@@ -15,7 +15,7 @@
 </head>
 
 <body class="skin-blue" onload>
-
+ <?php $session = session(); ?>
 
   <div class="wrapper">
 
@@ -56,7 +56,7 @@
                       <a href="#">
                         <div class="pull-left">
                           <!-- User Image -->
-                          <img src="img/profile.jpeg" class="img-circle" alt="User Image">
+                          <img src="<?php echo $session->get('offImage'); ?>" class="img-circle" alt="User Image">
                         </div>
                         <!-- Message title and timestamp -->
                         <h4>
@@ -143,42 +143,28 @@
               <!-- Menu Toggle Button -->
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <!-- The user image in the navbar-->
-                <img src="img/profile.jpeg" class="user-image" alt="User Image">
+                <img src="<?php echo $session->get('offImage'); ?>" class="user-image" alt="User Image">
                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                <span class="hidden-xs">Yannasit Santiekachun</span>
+                <span class="hidden-xs"><?php echo $session->get('FName')." ".$session->get('LName'); ?>
+                </span>
               </a>
               <ul class="dropdown-menu">
                 <!-- The user image in the menu -->
                 <li class="user-header">
-                  <img src="img/profile.jpeg" class="img-circle" alt="User Image">
+                  <img src="<?php echo $session->get('offImage'); ?>" class="img-circle" alt="User Image">
 
                   <p>
-                    Yannasit Santiekachun - Web Developer
-                    <small>Member since Nov. 2012</small>
+                  <?php echo $session->get('FName')." ".$session->get('LName'); ?>
                   </p>
                 </li>
                 <!-- Menu Body -->
-                <li class="user-body">
-                  <div class="row">
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Followers</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Sales</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Friends</a>
-                    </div>
-                  </div>
-                  <!-- /.row -->
-                </li>
                 <!-- Menu Footer-->
                 <li class="user-footer">
                   <div class="pull-left">
                     <a href="#" class="btn btn-default btn-flat">Profile</a>
                   </div>
                   <div class="pull-right">
-                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                    <a href="/logout" class="btn btn-default btn-flat">Sign out</a>
                   </div>
                 </li>
               </ul>
@@ -200,7 +186,7 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel">
           <div class="pull-left image">
-            <img src="img/profile.jpeg" class="img-circle" alt="User Image">
+            <img src="<?php echo $session->get('offImage'); ?>" class="img-circle" alt="User Image">
           </div>
           <div class="pull-left info">
             <p>Yannasit Santiekachun</p>
@@ -260,7 +246,7 @@
         <!--------------------------
               | Your Page Content Here |
               -------------------------->
-        
+
         <div class="row justify-content-md-center">
           <!-- data table ใช้เเสดงข้อมูลเเละเเบ่งหน้าให้อัตโนมัติ -->
           <div class="col-12">
@@ -272,9 +258,9 @@
                   <th>นามสกุล</th>
                   <th>รหัสบัตรประชาชน</th>
                   <th>รูปบัตรประชาชน</th>
+                  <th>รูปผู้ใช้</th>
                   <th>สถานะ</th>
                   <th>เพศ</th>
-                  <th>รูปผู้ใช้</th>
                   <th>วันเกิด</th>
                   <th>ที่อยู่</th>
                   <th>อีเมล</th>
@@ -291,10 +277,10 @@
                       <td><?php echo $user['FName']; ?></td>
                       <td><?php echo $user['LName']; ?></td>
                       <td><?php echo $user['idCard']; ?></td>
-                      <td><img src="<?php echo $user['idCardImage']; ?>" width="100" height="100"></td>
+                      <td><img src="<?php echo $user['idCardImage']; ?>" width="150" height="100"></td>
+                      <td><img src="<?php echo $user['userImage']; ?>" width="100" height="100"></td>
                       <td><?php echo $user['statusUser']; ?></td>
                       <td><?php echo $user['gender']; ?></td>
-                      <td><img src="<?php echo $user['userImage']; ?>" width="100" height="100"></td>
                       <td><?php echo $user['birthday']; ?></td>
                       <td><?php echo $user['address']; ?></td>
                       <td><?php echo $user['email']; ?></td>
