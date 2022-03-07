@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="/css/login.css">
 
 </head>
@@ -39,7 +39,14 @@
                             <form action="/Officer/login" method="post" class="signin-form">
                                 <div class="form-group mb-3">
                                     <?php if (session()->getFlashdata('msg')) : ?>
-                                        <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
+                                        <div><script>
+                                                Swal.fire({
+                                                    icon: 'error',
+                                                    title: '<?= session()->getFlashdata('msg') ?>',
+                                                    text: 'โปรดตรวจสอบชื่อผู้ใช้หรือรหัสผ่านให้ถูกต้อง',
+                                                    
+                                                })
+                                            </script></div>
                                     <?php endif ?>
                                     <label class="label" for="name">ชื่อผู้ใช้งาน</label>
                                     <input type="text" class="form-control" placeholder="Username" name="userName" value="<?= set_value('userName'); ?>" required>

@@ -16,8 +16,7 @@ class OfficerModel extends Model{
         return TRUE;
     }
 
-    public function login($userName,$password)
-    {
+    public function login($userName,$password){
         $data = $this->where('userName', $userName)->first();
         $set_data = [];
         if($data){
