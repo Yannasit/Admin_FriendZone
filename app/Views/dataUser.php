@@ -34,7 +34,7 @@
                     <p><?php echo " รหัสบัตรประชาชน : " . $user['idCard'] ?></p>
                     <p><?php echo " รูปบัตรประชาชน : "?></p>
                     <img src="<?php echo  $user['idCardImage']; ?>" width="200" height="100">
-                    <p><?php echo " รูป : " ?></p>
+                    <p><?php echo " รูป : " ?> </p> 
                     <img src="<?php echo  $user['userImage']; ?>" width="100" height="100">
                     <p><?php echo " วันหมดอายุของบัตร : " . $user['expIdCard'] ?></p>
                     <p><?php echo " สถานะ : " . $user['statusUser'] ?></p>
