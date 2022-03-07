@@ -23,8 +23,7 @@ class Officer extends ResourceController // เปลี่ยนจาก Contr
         echo view('register');
     }
 
-    public function register()
-    {
+    public function register() {
         $rules = [
             'userName' => 'required|min_length[6]|max_length[20]',
             'password' => 'required|min_length[6]|max_length[20]',
@@ -50,8 +49,7 @@ class Officer extends ResourceController // เปลี่ยนจาก Contr
              }
     }
 
-    public function login()
-    {
+    public function login() {
         $session = session();
         $model = new OfficerModel();
         $userName = $this->request->getVar('userName');
