@@ -38,18 +38,9 @@ $routes->get('/home', 'User::viewUser');
 $routes->get('/', 'Officer::index');
 $routes->get('/logout', 'Officer::Logout');
 $routes->get('/register', 'Officer::index2');
+$routes->get('/dataUser/(:num)', 'User::viewUser2/$1');
 
-$routes->get('/api/posts','Post::viewPost');                                //Get All Post
-$routes->get('/api/posts/(:num)','Post::getPostById/$1');                   //Get Post by Id
 
-$routes->get('/api/officer','Officer::viewOfficer');                        //Get All Officer
-$routes->get('/api/officer/(:num)','Officer::getOfficerById/$1');           //Get Officer by Id
-$routes->post('/api/officer','Officer::addOfficer');                        //Add New Officer
-$routes->delete('/api/officer/(:num)','Officer::deleteOfficer/$1');         //Delete Officer
-
-$routes->get('/api/category','Category::viewCategory');                     //Get All Category
-$routes->post('/api/category','Category::addCategory');                     //Add New Category
-$routes->delete('/api/category/(:num)','Category::deleteCategory/$1');      //Delete Category
 /*
  * --------------------------------------------------------------------
  * Additional Routing

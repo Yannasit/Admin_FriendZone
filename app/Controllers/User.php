@@ -11,6 +11,20 @@ use CodeIgniter\HTTP\RequestTrait; // เรียกใช้API
 class User extends ResourceController // เปลี่ยนจาก Controller
 {
     use RequestTrait; // เรียกใช้
+
+    public function viewUser2($id)
+    {
+        $model = new UserModel();
+        $data['user'] = $model->viewUser2($id);
+        if ( $data['user']) {
+            return view('dataUser', $data);
+        }
+         else{
+             return view('dataUser');
+         }
+    }
+
+
     
     //Get all User
     public function viewUser()

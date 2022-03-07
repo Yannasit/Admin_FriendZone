@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/adminlte.min.css">
   <link rel="stylesheet" href="css/skin.min.css">
   <link rel="stylesheet" href="css/zoom.css">
+  
 </head>
 
 <body class="skin-blue" onload>
@@ -299,10 +300,9 @@
 
                       <td>
                         <div class="btn-group btn-group-sm">
-                          <a class="btn btn-info" href="...<?php echo $user['userId'] ?>" data-bs-toggle="modal" data-bs-target="#userId">
+                          <a class="btn btn-info" href="/dataUser/<?php echo $user['userId'] ?>" data-bs-toggle="modal" data-bs-target="#userId">
                             <i class="fa fa-eye"></i>
                           </a>
-
                         </div>
                       </td>
 

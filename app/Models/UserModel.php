@@ -15,5 +15,11 @@ class UserModel extends Model{
         return $data;
     }
 
+    public function viewUser2($id)
+    {
+        $data = $this->where('userId',$id)->findAll();
+        return $data;
+    }
+
 
 } 
