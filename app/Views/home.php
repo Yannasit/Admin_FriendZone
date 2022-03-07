@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/ionicons.min.css">
   <link rel="stylesheet" href="css/adminlte.min.css">
   <link rel="stylesheet" href="css/skin.min.css">
+  <link rel="stylesheet" href="css/zoom.css">
 </head>
 
 <body class="skin-blue" onload>
@@ -189,7 +190,7 @@
             <img src="<?php echo $session->get('offImage'); ?>" class="img-circle" alt="User Image">
           </div>
           <div class="pull-left info">
-            <p>Yannasit Santiekachun</p>
+            <p><?php echo $session->get('FName')." ".$session->get('LName'); ?></p>
             <!-- Status -->
             <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
           </div>
@@ -277,9 +278,18 @@
                       <td><?php echo $user['FName']; ?></td>
                       <td><?php echo $user['LName']; ?></td>
                       <td><?php echo $user['idCard']; ?></td>
-                      <td><img src="<?php echo $user['idCardImage']; ?>" width="150" height="100"></td>
+                      <td><img class="zoom" src=" <?php echo $user['idCardImage']; ?>" width="150" height="100"></td>
                       <td><img src="<?php echo $user['userImage']; ?>" width="100" height="100"></td>
-                      <td><?php echo $user['statusUser']; ?></td>
+
+                      <td >
+                      <?php if ($user['statusUser'] == "0")   {
+                            echo "<p style='color:red;'>รอการยืนยันตัวตน</p>";
+
+                        } else if ($user['statusUser'] == "1") {
+                            echo "<p style='color:green;'>ยืนยันตัวตนสำเร็จ</p>";
+                        };
+                        ?>
+                     </td>
                       <td><?php echo $user['gender']; ?></td>
                       <td><?php echo $user['birthday']; ?></td>
                       <td><?php echo $user['address']; ?></td>
