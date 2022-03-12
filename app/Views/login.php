@@ -36,7 +36,7 @@
                                     <h3 class="mb-4">เข้าสู่ระบบ</h3>
                                 </div>
                             </div>
-                            <form action="/Officer/login" method="post" class="signin-form">
+                            <form action="/OfficerController/login" method="post" class="signin-form">
                                 <div class="form-group mb-3">
                                     <?php if (session()->getFlashdata('msg')) : ?>
                                         <div><script>

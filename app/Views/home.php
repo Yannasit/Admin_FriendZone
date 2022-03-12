@@ -317,7 +317,7 @@
                   <span class="info-box-icon bg-aqua"><i class="fa fa-telegram"></i></span>
                   <div class="info-box-content">
                     <span class="info-box-text">คำขอที่รออนุมัติ</span>
-                    <span class="info-box-number">90</span>
+                    <span class="info-box-number">10</span>
                   </div><!-- /.info-box-content -->
                 </div>
               </div>

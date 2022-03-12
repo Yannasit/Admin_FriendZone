@@ -34,11 +34,11 @@ $routes->setAutoRoute(true);
 
 
 // $routes->get('/', 'Home::index');
-$routes->get('/home', 'User::viewUser');
-$routes->get('/', 'Officer::index');
-$routes->get('/logout', 'Officer::Logout');
-$routes->get('/register', 'Officer::index2');
-$routes->get('/dataUser/(:num)', 'User::viewUser2/$1');
+$routes->get('/home', 'UserController::viewUser');
+$routes->get('/', 'OfficerController::index');
+$routes->get('/logout', 'OfficerController::logout');
+$routes->get('/register', 'OfficerController::index2');
+$routes->get('/dataUser/(:num)', 'UserController::viewUser2/$1');
 
 
 /*

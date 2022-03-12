@@ -8,7 +8,7 @@ use CodeIgniter\RESTful\ResourceController; // เรียกใช้API
 use CodeIgniter\HTTP\RequestTrait; // เรียกใช้API
 use CodeIgniter\API\ResponseTrait; // เรียกใช้API
 
-class Post extends ResourceController // เปลี่ยนจาก Controller
+class PostController extends ResourceController // เปลี่ยนจาก Controller
 {
     use RequestTrait; // เรียกใช้
     
