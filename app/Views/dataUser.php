@@ -21,6 +21,7 @@
 
 <body>
 <?php $session = session(); ?>
+<from action="/UserController/verifyUser" method="post">
     <div class="bg-alumni"></div>
     <div class="container mt-4">
         <div class="row justify-content-md-center">
@@ -51,7 +52,8 @@
 
 
                 <div style="float: right;">
-                    <a href="/delete" class="btn btn-primary">กลับหน้าหลัก</a>
+                    <a href="/home" class="btn btn-primary">กลับหน้าหลัก</a>
+                    <button class="btn btn-primary" onclick="verifyUser()">บันทึก</button>
                 </div>
 
 
@@ -62,7 +64,7 @@
     </div>
     </div>
 
-
+</from>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="/jquery.min.js"></script>

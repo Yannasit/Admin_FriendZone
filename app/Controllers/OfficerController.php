@@ -8,21 +8,23 @@ use CodeIgniter\RESTful\ResourceController; // เรียกใช้API
 use CodeIgniter\HTTP\RequestTrait; // เรียกใช้API
 use CodeIgniter\API\ResponseTrait; // เรียกใช้API
 
-class Officer extends ResourceController // เปลี่ยนจาก Controller
+class OfficerController extends ResourceController // เปลี่ยนจาก Controller
 {
     use RequestTrait; // เรียกใช้
 
-    public function index()
-    {
+    //แสดงหน้า login
+    public function index(){
         helper('form');
         echo view('login');
     }
-    public function index2()
-    {
+
+    //แสดงหน้า Register
+    public function index2(){
         helper('form');
         echo view('register');
     }
 
+    //Register
     public function register() {
         $rules = [
             'userName' => 'required|min_length[6]|max_length[20]',
@@ -49,6 +51,7 @@ class Officer extends ResourceController // เปลี่ยนจาก Contr
              }
     }
 
+    //Login
     public function login() {
         $session = session();
         $model = new OfficerModel();
@@ -64,9 +67,12 @@ class Officer extends ResourceController // เปลี่ยนจาก Contr
         }
     }
 
-    public function Logout(){
+    //Logout
+    public function logout(){
         $session = session();
         $session->destroy();
         return redirect()->to('/');
     }
+
+
 }

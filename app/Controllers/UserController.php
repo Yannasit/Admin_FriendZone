@@ -8,10 +8,11 @@ use CodeIgniter\RESTful\ResourceController; // เรียกใช้API
 use CodeIgniter\HTTP\RequestTrait; // เรียกใช้API
 
 
-class User extends ResourceController // เปลี่ยนจาก Controller
+class UserController extends ResourceController // เปลี่ยนจาก Controller
 {
     use RequestTrait; // เรียกใช้
 
+    //Get all User by userId
     public function viewUser2($id)
     {
         $model = new UserModel();
@@ -23,8 +24,6 @@ class User extends ResourceController // เปลี่ยนจาก Controll
              return view('dataUser');
          }
     }
-
-
     
     //Get all User
     public function viewUser()
@@ -37,6 +36,12 @@ class User extends ResourceController // เปลี่ยนจาก Controll
          else{
              return view('home');
          }
+        
+    }
+
+    //verify user
+    public function verifyUser()
+    {
         
     }
 
